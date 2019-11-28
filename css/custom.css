@@ -94,6 +94,12 @@ ul {
 	padding-left: 0;
 }
 
+#ft-wrapper {
+	display: flex;
+	min-height: 70vh;
+	flex-direction: column;
+}
+
 .ft-wrapper {
 	background: linear-gradient(to right, #063260,
 	#001f3f);
@@ -113,19 +119,22 @@ ul {
 	padding-bottom: 0.625rem;
 }
 
-#ft-wrapper {
-	display: flex;
-	min-height: 70vh;
-	flex-direction: column;
-}
-
 .ft-container {
 	flex: 1;
 }
 
 .ft-main-item {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 	padding: 1.25rem;
 	min-width: 12.5rem;
+}
+
+.ft-main-item p {
+	margin-top: -5px;
+	padding-bottom: 1.128rem;
 }
 
 form {
@@ -136,7 +145,8 @@ form {
 .ft-form input[type="text"] {
 	border: 2px solid #fff;
 	border-radius: 5px;
-	padding: 0.625rem;
+	padding: 0.925rem;
+	width: 500px;
 	margin-top: 0.3125rem;
 	background: transparent;
 }
